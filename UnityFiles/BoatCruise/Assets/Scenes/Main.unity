@@ -819,6 +819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1619534901}
   - component: {fileID: 1619534902}
+  - component: {fileID: 1619534904}
+  - component: {fileID: 1619534903}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -832,9 +834,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1619534900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73348147, y: 0.73348147, z: 0.33520678}
   m_Children: []
   m_Father: {fileID: 1658923359}
   m_RootOrder: 0
@@ -852,6 +854,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boat: {fileID: 1658923355}
   forcePower: 750
+--- !u!33 &1619534903
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1619534900}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1619534904
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1619534900}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1646712620
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +993,7 @@ GameObject:
   - component: {fileID: 1658923357}
   - component: {fileID: 1658923356}
   - component: {fileID: 1658923360}
+  - component: {fileID: 1658923361}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -1018,7 +1063,7 @@ Transform:
   m_GameObject: {fileID: 1658923355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.752, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 2.74028}
+  m_LocalScale: {x: 1.3633609, y: 1.3633609, z: 2.9832332}
   m_Children:
   - {fileID: 1619534901}
   m_Father: {fileID: 0}
@@ -1039,6 +1084,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1658923361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658923355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89a95cb16d382b40b6c19d0538abee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motor: {fileID: 1619534900}
+  rotAmount: 1
 --- !u!1 &1723570483
 GameObject:
   m_ObjectHideFlags: 0

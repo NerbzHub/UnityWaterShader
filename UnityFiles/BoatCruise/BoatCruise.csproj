@@ -309,6 +309,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BoatControl.cs" />
     <Compile Include="Assets\Scripts\MotorForce.cs" />
     <Compile Include="Assets\Scripts\WaterManager.cs" />
   </ItemGroup>
